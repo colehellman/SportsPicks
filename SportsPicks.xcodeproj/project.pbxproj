@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		371F9A7E2CEC5324007F31F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 371F9A7D2CEC5324007F31F1 /* GoogleService-Info.plist */; };
+		371F9A7F2CEC5324007F31F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 371F9A7D2CEC5324007F31F1 /* GoogleService-Info.plist */; };
+		371F9A802CEC5324007F31F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 371F9A7D2CEC5324007F31F1 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		371F9A332CEC3CFE007F31F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +33,7 @@
 		371F9A222CEC3CFC007F31F1 /* SportsPicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsPicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		371F9A322CEC3CFE007F31F1 /* SportsPicksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsPicksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		371F9A3C2CEC3CFE007F31F1 /* SportsPicksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsPicksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		371F9A7D2CEC5324007F31F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +82,7 @@
 		371F9A192CEC3CFC007F31F1 = {
 			isa = PBXGroup;
 			children = (
+				371F9A7D2CEC5324007F31F1 /* GoogleService-Info.plist */,
 				371F9A242CEC3CFC007F31F1 /* SportsPicks */,
 				371F9A352CEC3CFE007F31F1 /* SportsPicksTests */,
 				371F9A3F2CEC3CFE007F31F1 /* SportsPicksUITests */,
@@ -195,6 +203,9 @@
 			);
 			mainGroup = 371F9A192CEC3CFC007F31F1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				371F9A7C2CEC5311007F31F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 371F9A232CEC3CFC007F31F1 /* Products */;
 			projectDirPath = "";
@@ -212,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371F9A7F2CEC5324007F31F1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371F9A7E2CEC5324007F31F1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371F9A802CEC5324007F31F1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +410,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SportsPicks/Preview Content\"";
+				DEVELOPMENT_TEAM = GVQ45PNARW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -424,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SportsPicks/Preview Content\"";
+				DEVELOPMENT_TEAM = GVQ45PNARW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -552,6 +568,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		371F9A7C2CEC5311007F31F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 371F9A1A2CEC3CFC007F31F1 /* Project object */;
 }
